@@ -1,0 +1,148 @@
+<!doctype html>
+<html style="overflow: hidden;">
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+    
+<style>
+h1
+{
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+    font-size: 50px;  
+}
+body
+{
+    background-image: url("img/v4.jpg");
+    background-size: 100%;
+    //opacity: 0.9;
+}
+input[type=password], select {
+    width: 40%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background:transparent;
+    box-sizing: border-box;
+}
+input[type=text]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background:transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#ar{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 25%%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.mani
+{   width: 50%;
+    //height:200px;
+    margin: 0 auto;
+    margin-left:400px;
+}​
+#nav {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+}
+.container {
+    padding: 2px 16px;
+}
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 20px;
+  pointer-events: none;
+}
+.end{
+    background-color:black;
+    height:74px;
+    text-align:center;
+
+
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 3px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 25px; }
+
+</style>
+<script type="text/javascript">
+    function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+</head>
+<body>
+    
+    <br>
+    <div class="mani">
+        <h1 style="color:white" >Confirm Details !! <span class="glyphicon glyphicon-user"></span></h1><br>
+         <form name ="myForm" action="increase.php" method="POST" onsubmit="validateForm()">
+            <label for="fname" style="color : white">Mobile No. or Username<span style="color:black">*</span></label><br>
+           
+                     <input type="text"  name="mob" placeholder="Mobile number" />       
+             <br>
+            <label for="lname" style="color : white">Password<span style="color:black">*</span></label><br>
+            
+                    <input type="password" name="pass" placeholder="Password" />
+             <br>
+             <input type="submit" value="Submit">
+            <p style="text-decoration: none;"><a href="signup.html">No Account?  Signup here</a></p>
+         </form>
+
+         </div>
+
+        <style type="text/css">
+        body{
+          background-color: black;
+          background-image: url("int2.jpg");
+          background-position: left;
+            background-size: 580px;
+            padding-top: 70px;
+            background-repeat: no-repeat;
+        }
+          .mani{
+            padding-left: 300px;
+          }
+        </style> 
+
+</body>
+</html> 
+
